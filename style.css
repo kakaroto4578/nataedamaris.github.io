@@ -1,0 +1,104 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Remove scroll */
+    height: 100%;
+    width: 100%;
+}
+
+
+:root {
+    --gold-color: #D4AF37; /* Sophisticated gold */
+    --light-gold: #FFFBF5; /* Very light, elegant gold for background */
+}
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-gold); /* Elegant light gold background */
+    color: #333333; /* Dark gray for general text */
+    transition: background-color 0.5s ease; /* Smooth transition for background */
+    
+    /* Imagem de fundo */
+    background-image: url('backgroud.jpg');
+    background-repeat: no-repeat;       /* Não repetir a imagem */
+    background-position: center center; /* Centralizar a imagem */
+    background-size: cover;              /* Ajustar a imagem para cobrir toda a tela */
+}
+
+h1{
+    font-family: "Imperial Script", cursive;
+    color: #D4AF37;
+}
+h2, h3, h4, h5, h6 {
+    color: #D4AF37;
+}
+.text-gold {
+    color: #D4AF37;
+}
+.bg-gold {
+    color: #D4AF37;
+}
+.border-gold {
+    color: #D4AF37;
+}
+/* Countdown specific styling */
+.countdown-item {
+    display: flex;
+    flex-direction: column; /* Empilha verticalmente */
+    align-items: center;     /* Centraliza horizontalmente */
+    justify-content: center;
+    margin: 0 1rem;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid var(--gold-color);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.countdown-value {
+    font-size: 5.5rem; /* Large numbers */
+    font-weight: 700;
+    color: var(--gold-color);
+    line-height: 1;
+}
+.countdown-label {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #555555;
+    margin-top: 0.5rem;
+}
+
+.ampersand {
+  font-size: 0.5em; /* metade do tamanho da fonte do h1 */
+  vertical-align: middle; /* alinha verticalmente ao meio */
+  margin: 0 0.2em; /* espaçamento horizontal */
+  color: var(--gold-color); /* pode manter a cor dourada */
+  font-weight: normal; /* opcional: deixa o & menos pesado */
+}
+
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 640px) {
+    .countdown-value {
+        font-size: 1.8rem;
+    }
+    .countdown-label {
+        font-size: 0.75rem;
+    }
+    .countdown-item {
+        padding: 0.75rem;
+        margin: 0 0.5rem;
+    }
+}
+
+/* Fade-in animation for the couple's name */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in-name {
+    animation: fadeIn 1.5s ease-out forwards;
+    opacity: 0; /* Start invisible */
+}

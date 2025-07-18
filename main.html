@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natã & Dâmaris - Nosso Casamento</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for elegant typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Updock&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="min-h-screen flex flex-col items-center justify-center text-center p-4">
+
+    <!-- Hero + Contador centralizados juntos -->
+    <section class="min-h-screen flex flex-col items-center justify-center text-center px-4">
+        <!-- Nome e frase -->
+        <div class="mb-10">
+            <h1 class="text-5xl sm:text-9xl  mb-4 fade-in-name">
+                Natã <span class="ampersand">&</span> Dâmaris
+            </h1>
+
+
+        </div>
+
+        <!-- Contagem Regressiva -->
+        <div>
+
+            <div id="countdown" class="flex justify-center flex-wrap">
+                <div
+                    class="flex flex-col items-center justify-center mx-2 sm:mx-4 p-4 rounded-lg shadow-sm bg-white/90">
+                    <span id="days" class="text-4xl font-bold text-gold leading-none">00</span>
+                    <span class="text-sm uppercase tracking-wider text-gray-600 mt-2">Dias</span>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center mx-2 sm:mx-4 p-4 rounded-lg shadow-sm bg-white/90">
+                    <span id="hours" class="text-4xl font-bold text-gold leading-none">00</span>
+                    <span class="text-sm uppercase tracking-wider text-gray-600 mt-2">Horas</span>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center mx-2 sm:mx-4 p-4 rounded-lg shadow-sm bg-white/90">
+                    <span id="minutes" class="text-4xl font-bold text-gold leading-none">00</span>
+                    <span class="text-sm uppercase tracking-wider text-gray-600 mt-2">Minutos</span>
+                </div>
+                <div
+                    class="flex flex-col items-center justify-center mx-2 sm:mx-4 p-4 rounded-lg shadow-sm bg-white/90">
+                    <span id="seconds" class="text-4xl font-bold text-gold leading-none">00</span>
+                    <span class="text-sm uppercase tracking-wider text-gray-600 mt-2">Segundos</span>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>
